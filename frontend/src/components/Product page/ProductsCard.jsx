@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 import { fontSize } from "@mui/system";
 import { useState } from "react";
 import pic from "./images/heart.png"
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { AddToCart } from "../../actions/products";
 import { MuiDrawer } from "./MuiDrawer";
 import { ToastContainer, toast } from "react-toastify";
