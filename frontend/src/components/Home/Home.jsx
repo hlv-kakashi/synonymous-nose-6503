@@ -143,18 +143,18 @@ function HomePage() {
       </div>
       <div className={`${styles.card}`}>
         {cardImages1.map((cards, index) => (
-          <Stack
+          <div
           className={`${styles.setimage}}`}
             borderWidth="1px"
             borderRadius="lg"
-            w={{  md: "560px" }}
+            w={{  md: "540px" }}
             height={{ sm: "476px", md: "18.8rem" }}
             direction={{ base: "column", md: "row" }}
             marginTop={"20px"}
           >
             {" "}
             <div className="each-slide" key={index}>
-              <div>
+              <div className={styles.setcontainer}>
                 <img
                   className={styles.desimcal}
                   src={`${cards.url}`}
@@ -162,7 +162,7 @@ function HomePage() {
                 />
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <div  className={`${styles.cardsquare}`}>
@@ -190,7 +190,7 @@ function HomePage() {
       {/* cards 1 */}
       <div className={styles.card}>
         {cardImages2.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -211,13 +211,13 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <h1 className={styles.bigheader}>ONLY AT NYKAA</h1>
       <div className={styles.card}>
         {cardImages3.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -238,12 +238,12 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
-      <div className={styles.card}>
+      <div className={styles.singlecard}>
         {cardImages31.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -254,7 +254,7 @@ function HomePage() {
           >
             {" "}
             <div className="each-slide" key={index}>
-              <div className={styles.setcontainer}>
+              <div className={styles.setcontainer2}>
                 <img
                   className={styles.desimcal}
                   src={`${cards.url}`}
@@ -266,7 +266,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <div>
@@ -289,7 +289,6 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"60px"}
           marginBottom={"20px"}
         >
           <Image
@@ -377,7 +376,7 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"20px"}
+          
         >
           <Image
             h={"270px"}
@@ -405,7 +404,7 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"60px"}
+          marginLeft={"15px"}
         >
           <Image
             h={"270px"}
@@ -460,7 +459,7 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"20px"}
+          marginLeft={"60px"}
         >
           <Image
             h={"270px"}
@@ -513,8 +512,7 @@ function HomePage() {
           className={styles.cardhovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"310px"}
-          marginTop={"20px"}
+          marginTop={"30px"}
         >
           <Image
             h={"270px"}
@@ -534,36 +532,10 @@ function HomePage() {
             </Stack>
           </Box>
         </Box>
-        <Box
-          maxW={"270px"}
-          h={"370px"}
-          w={"full"}
-          bg={useColorModeValue("white", "gray.800")}
-          className={styles.cardhovereffect}
-          rounded={"md"}
-          overflow={"hidden"}
-          marginLeft={"20px"}
-          marginTop={"20px"}
-        >
-          <Image
-            h={"270px"}
-            w={"270px"}
-            src={
-              "https://images-static.nykaa.com/uploads/fc49bc73-a146-4a37-83b2-c5d2e7eaa9f4.jpg?tr=w-600,cm-pad_resize"
-            }
-            alt=""
-            objectFit={"cover"}
-          />
-          <Box p={6}>
-            <Stack spacing={0} align={"center"} mb={5}>
-              <Text className={styles.tittle}> Worth Rs. 249 On Rs. 800</Text>
-            </Stack>
-          </Box>
-        </Box>
       </div>
-      <div className={`${styles.card} ${styles.setimage}`}>
+      <div className={`${styles.singlecard} ${styles.setimage}`}>
         {cardImages4.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -574,7 +546,7 @@ function HomePage() {
           >
             {" "}
             <div className="each-slide" key={index}>
-              <div className={styles.setcontainer}>
+              <div className={styles.setcontainer2}>
                 <img
                   className={styles.desimcal}
                   src={`${cards.url}`}
@@ -586,7 +558,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <div>
@@ -684,7 +656,7 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"20px"}
+          marginLeft={"60px"}
         >
           <Image
             h={"270px"}
@@ -694,6 +666,7 @@ function HomePage() {
             }
             alt=""
             objectFit={"cover"}
+          
           />
           <Box p={6}>
             <Stack spacing={0} align={"center"} mb={5}>
@@ -709,7 +682,7 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"60px"}
+          marginLeft={"20px"}
         >
           <Image
             h={"270px"}
@@ -762,7 +735,8 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          marginLeft={"20px"}
+          marginTop={"10"}
+          marginLeft={"60px"}
         >
           <Image
             h={"270px"}
@@ -807,11 +781,39 @@ function HomePage() {
             </Stack>
           </Box>
         </Box>
+        <Box
+          maxW={"270px"}
+          h={"370px"}
+          w={"full"}
+          bg={useColorModeValue("white", "gray.800")}
+          className={styles.card2hovereffect}
+          rounded={"md"}
+          overflow={"hidden"}
+          marginLeft={"20px"}
+        >
+          <Image
+            h={"270px"}
+            w={"270px"}
+            src={
+              "https://images-static.nykaa.com/uploads/7374c63a-d155-49b3-86f0-759cd2b05276.gif?tr=w-600,cm-pad_resize"
+            }
+            alt=""
+            objectFit={"cover"}
+          />
+          <Box p={6}>
+            <Stack spacing={0} align={"center"} mb={5}>
+              <Text className={styles.tittle}>
+                {" "}
+                Free Fab Bullet Lipstick Free On ₹799
+              </Text>
+            </Stack>
+          </Box>
+        </Box>
       </div>
       <h1 className={styles.bigheader}>POP-UP STORES</h1>
       <div className={styles.card}>
         {cardImages5.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -832,7 +834,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <div>
@@ -852,7 +854,7 @@ function HomePage() {
       <h1 className={styles.bigheader}>SPECIAL CURATIONS</h1>
       <div className={styles.card}>
         {cardImages6.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -873,7 +875,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       <h1 className={styles.bigheader}>GIFT CARDS</h1>
@@ -889,7 +891,7 @@ function HomePage() {
       <h1 className={styles.bigheader}>BEAUTY ADVICE</h1>
       <div className={styles.card}>
         {cardImages7.map((cards, index) => (
-          <Stack
+          <div
             borderWidth="1px"
             borderRadius="lg"
             w={{ sm: "100%", md: "560px" }}
@@ -906,7 +908,7 @@ function HomePage() {
                 />
               </div>
             </div>
-          </Stack>
+          </div>
         ))}
       </div>
       {/* <Carousel3 /> */}
