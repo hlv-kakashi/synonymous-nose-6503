@@ -141,12 +141,13 @@ function HomePage() {
           alt="banner2"
         />
       </div>
-      <div className={styles.card}>
+      <div className={`${styles.card}`}>
         {cardImages1.map((cards, index) => (
           <Stack
+          className={`${styles.setimage}}`}
             borderWidth="1px"
             borderRadius="lg"
-            w={{ sm: "100%", md: "560px" }}
+            w={{  md: "560px" }}
             height={{ sm: "476px", md: "18.8rem" }}
             direction={{ base: "column", md: "row" }}
             marginTop={"20px"}
@@ -164,7 +165,7 @@ function HomePage() {
           </Stack>
         ))}
       </div>
-      <div className={styles.cardsquare}>
+      <div  className={`${styles.cardsquare}`}>
         <div>
           <img
             src="https://images-static.nykaa.com/uploads/887f5bce-b082-44f7-a5b4-00c7120ee5ba.png?tr=w-800,cm-pad_resize"
@@ -560,7 +561,7 @@ function HomePage() {
           </Box>
         </Box>
       </div>
-      <div className={styles.card}>
+      <div className={`${styles.card} ${styles.setimage}`}>
         {cardImages4.map((cards, index) => (
           <Stack
             borderWidth="1px"
@@ -568,7 +569,7 @@ function HomePage() {
             w={{ sm: "100%", md: "560px" }}
             height={{ sm: "476px", md: "18.8rem" }}
             direction={{ base: "column", md: "row" }}
-            marginLeft={"244px"}
+            marginLeft={"275px"}
             marginTop={"20px"}
           >
             {" "}
