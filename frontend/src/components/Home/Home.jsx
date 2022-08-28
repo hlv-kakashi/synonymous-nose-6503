@@ -3,13 +3,7 @@ import styles from "./Home.module.css";
 import Carousel1 from "./Carousel1.1";
 import Carousel2 from "./Carousel1.2";
 import Horizontal from "./Horizontal";
-import {
-  Box,
-  Text,
-  Image,
-  Stack,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Text, Image, Stack, useColorModeValue } from "@chakra-ui/react";
 
 const cardImages1 = [
   {
@@ -144,10 +138,10 @@ function HomePage() {
       <div className={`${styles.card}`}>
         {cardImages1.map((cards, index) => (
           <div
-          className={`${styles.setimage}}`}
+            className={`${styles.setimage}}`}
             borderWidth="1px"
             borderRadius="lg"
-            w={{  md: "540px" }}
+            w={{ md: "540px" }}
             height={{ sm: "476px", md: "18.8rem" }}
             direction={{ base: "column", md: "row" }}
             marginTop={"20px"}
@@ -165,7 +159,7 @@ function HomePage() {
           </div>
         ))}
       </div>
-      <div  className={`${styles.cardsquare}`}>
+      <div className={`${styles.cardsquare}`}>
         <div>
           <img
             src="https://images-static.nykaa.com/uploads/887f5bce-b082-44f7-a5b4-00c7120ee5ba.png?tr=w-800,cm-pad_resize"
@@ -376,7 +370,6 @@ function HomePage() {
           className={styles.card2hovereffect}
           rounded={"md"}
           overflow={"hidden"}
-          
         >
           <Image
             h={"270px"}
@@ -666,7 +659,6 @@ function HomePage() {
             }
             alt=""
             objectFit={"cover"}
-          
           />
           <Box p={6}>
             <Stack spacing={0} align={"center"} mb={5}>
